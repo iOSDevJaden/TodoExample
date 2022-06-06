@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var vm = ViewModel()
+    
     var body: some View {
         VStack {
             // Todo List Cell
             List {
-                TodoListCell(isFinished: .constant(true), todoContent: "Item 1")
-                TodoListCell(isFinished: .constant(false), todoContent: "Item 2")
-                TodoListCell(isFinished: .constant(false), todoContent: "Item 3")
+                ForEach(vm.todoItems) { item in
+                    TodoListCell(todoItem: item)
+                        .onTapGesture(perform: {
+                            /* Update TodoItem isFinished Property */
+                        })
+                }
             }
         }
         .navigationTitle("Todo List") // Setting Title
