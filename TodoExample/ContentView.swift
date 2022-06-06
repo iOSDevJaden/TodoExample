@@ -26,7 +26,14 @@ struct ContentView: View {
             }
         }
         .navigationTitle("Todo List") // Setting Title
+        .toolbar(content: getLeadingToolBar)
         .toolbar(content: getTrailingToolbar)
+    }
+    
+    private func getLeadingToolBar() -> some ToolbarContent {
+        ToolbarItem(placement: .navigationBarLeading, content: {
+            EditButton()
+        })
     }
     
     private func getTrailingToolbar() -> some ToolbarContent {
