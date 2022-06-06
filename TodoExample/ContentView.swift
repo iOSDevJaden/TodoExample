@@ -23,6 +23,16 @@ struct ContentView: View {
             }
         }
         .navigationTitle("Todo List") // Setting Title
+        .toolbar(
+            content: {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(
+                        action: {},
+                        label: {
+                            Text("Add Todo")
+                        })
+                }
+            })
     }
 }
 
