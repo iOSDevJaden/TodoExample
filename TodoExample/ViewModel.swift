@@ -25,4 +25,12 @@ class ViewModel: ObservableObject {
         // Update Todo Item status
         todoItems[targetItemIndex] = item.updateItem()
     }
+    
+    func deleteTodoItem(_ indexSet: IndexSet) {
+        todoItems.remove(atOffsets: indexSet)
+    }
+    
+    func moveTodoItem(from: IndexSet, to: Int) {
+        todoItems.move(fromOffsets: from, toOffset: to)
+    }
 }

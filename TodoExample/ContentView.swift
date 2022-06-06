@@ -21,6 +21,8 @@ struct ContentView: View {
                             vm.updateTodoItem(item)
                         })
                 }
+                .onMove(perform: vm.moveTodoItem)
+                .onDelete(perform: vm.deleteTodoItem)
             }
         }
         .navigationTitle("Todo List") // Setting Title
