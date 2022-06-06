@@ -40,6 +40,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1689281284DF4BC000DE913 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1C21C1B284DDA5D00E8FC99 /* TodoListCell.swift */,
+				A19EE62E284DAB1C0045572B /* ContentView.swift */,
+				A1C21C21284DEE1C00E8FC99 /* AddTodoView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A1689282284DF4D1000DE913 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A1C21C1D284DE03400E8FC99 /* TodoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A1689283284DF4D5000DE913 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A1C21C1F284DE3D900E8FC99 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		A19EE620284DAB1C0045572B = {
 			isa = PBXGroup;
 			children = (
@@ -60,11 +86,9 @@
 			isa = PBXGroup;
 			children = (
 				A19EE62C284DAB1C0045572B /* TodoExampleApp.swift */,
-				A19EE62E284DAB1C0045572B /* ContentView.swift */,
-				A1C21C1F284DE3D900E8FC99 /* ViewModel.swift */,
-				A1C21C21284DEE1C00E8FC99 /* AddTodoView.swift */,
-				A1C21C1D284DE03400E8FC99 /* TodoModel.swift */,
-				A1C21C1B284DDA5D00E8FC99 /* TodoListCell.swift */,
+				A1689281284DF4BC000DE913 /* View */,
+				A1689283284DF4D5000DE913 /* ViewModel */,
+				A1689282284DF4D1000DE913 /* Model */,
 				A19EE630284DAB200045572B /* Assets.xcassets */,
 				A19EE632284DAB200045572B /* Preview Content */,
 			);
