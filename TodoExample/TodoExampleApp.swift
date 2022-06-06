@@ -11,7 +11,10 @@ import SwiftUI
 struct TodoExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            // Todo List in the NavigationView
+            NavigationView {
+                ContentView()
+            }
         }
     }
 }

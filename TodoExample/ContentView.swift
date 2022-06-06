@@ -9,8 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            // Todo List Cell
+            HStack {
+                Image(systemName: "circle")
+                Text("Item 1")
+                Spacer()
+            }
+        }
+        .navigationTitle("Todo List") // Setting Title
+        .padding(.horizontal)
     }
 }
 
