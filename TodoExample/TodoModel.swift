@@ -16,10 +16,10 @@ struct TodoModel: Identifiable {
     
     // Todo Item should be started with
     // not finished status when it is initially created.
-    init(id: String,
+    init(id: String = UUID().uuidString,
          isFinished: Bool = false,
          todoContent: String) {
-        self.id = UUID().uuidString
+        self.id = id
         self.isFinished = isFinished
         self.todoContent = todoContent
     }
