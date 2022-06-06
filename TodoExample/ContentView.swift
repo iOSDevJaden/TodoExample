@@ -11,14 +11,13 @@ struct ContentView: View {
     var body: some View {
         VStack {
             // Todo List Cell
-            HStack {
-                Image(systemName: "circle")
-                Text("Item 1")
-                Spacer()
+            List {
+                TodoListCell(isFinished: .constant(true), todoContent: "Item 1")
+                TodoListCell(isFinished: .constant(false), todoContent: "Item 2")
+                TodoListCell(isFinished: .constant(false), todoContent: "Item 3")
             }
         }
         .navigationTitle("Todo List") // Setting Title
-        .padding(.horizontal)
     }
 }
 
