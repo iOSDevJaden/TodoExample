@@ -38,11 +38,10 @@ struct ContentView: View {
     
     private func getTrailingToolbar() -> some ToolbarContent {
         ToolbarItem(placement: .navigationBarTrailing) {
-            Button(
-                action: {},
-                label: {
-                    Text("Add Todo")
-                })
+            NavigationLink("Add Todo", destination: {
+                AddTodoView()
+                    .environmentObject(vm)
+            })
         }
     }
 }
