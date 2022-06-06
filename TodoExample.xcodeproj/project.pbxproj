@@ -13,6 +13,7 @@
 		A19EE634284DAB200045572B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A19EE633284DAB200045572B /* Preview Assets.xcassets */; };
 		A1C21C1C284DDA5E00E8FC99 /* TodoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C21C1B284DDA5D00E8FC99 /* TodoListCell.swift */; };
 		A1C21C1E284DE03400E8FC99 /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C21C1D284DE03400E8FC99 /* TodoModel.swift */; };
+		A1C21C20284DE3D900E8FC99 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C21C1F284DE3D900E8FC99 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		A19EE633284DAB200045572B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A1C21C1B284DDA5D00E8FC99 /* TodoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListCell.swift; sourceTree = "<group>"; };
 		A1C21C1D284DE03400E8FC99 /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
+		A1C21C1F284DE3D900E8FC99 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				A19EE62C284DAB1C0045572B /* TodoExampleApp.swift */,
 				A19EE62E284DAB1C0045572B /* ContentView.swift */,
+				A1C21C1F284DE3D900E8FC99 /* ViewModel.swift */,
 				A1C21C1D284DE03400E8FC99 /* TodoModel.swift */,
 				A1C21C1B284DDA5D00E8FC99 /* TodoListCell.swift */,
 				A19EE630284DAB200045572B /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1C21C20284DE3D900E8FC99 /* ViewModel.swift in Sources */,
 				A19EE62F284DAB1C0045572B /* ContentView.swift in Sources */,
 				A1C21C1E284DE03400E8FC99 /* TodoModel.swift in Sources */,
 				A1C21C1C284DDA5E00E8FC99 /* TodoListCell.swift in Sources */,
