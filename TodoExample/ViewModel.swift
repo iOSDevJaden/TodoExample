@@ -16,6 +16,10 @@ class ViewModel: ObservableObject {
         TodoModel(todoContent: "Item5"),
     ]
     
+    func addTodoItem(_ item: TodoModel) {
+        todoItems.append(item)
+    }
+    
     func updateTodoItem(_ item: TodoModel) {
         // Find Todo Item Index
         guard let targetItemIndex = todoItems.firstIndex(where: { $0.id == item.id }) else {
