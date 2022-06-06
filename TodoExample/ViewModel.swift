@@ -15,4 +15,14 @@ class ViewModel: ObservableObject {
         TodoModel(todoContent: "Item4"),
         TodoModel(todoContent: "Item5"),
     ]
+    
+    func updateTodoItem(_ item: TodoModel) {
+        // Find Todo Item Index
+        guard let targetItemIndex = todoItems.firstIndex(where: { $0.id == item.id }) else {
+            return
+        }
+        
+        // Update Todo Item status
+        todoItems[targetItemIndex] = item.updateItem()
+    }
 }

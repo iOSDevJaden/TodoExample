@@ -18,6 +18,7 @@ struct ContentView: View {
                     TodoListCell(todoItem: item)
                         .onTapGesture(perform: {
                             /* Update TodoItem isFinished Property */
+                            vm.updateTodoItem(item)
                         })
                 }
             }
